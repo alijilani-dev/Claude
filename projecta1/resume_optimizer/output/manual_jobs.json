@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Senior AI Engineer",
+    "company": "TechCorp AI",
+    "url": "https://www.linkedin.com/jobs/view/sample-1",
+    "location": "Remote",
+    "description": "About the job\n\nWe are seeking a Senior AI Engineer to join our ML platform team. You will design and implement production-scale AI systems that serve millions of users.\n\nRequired Qualifications:\n- 5+ years of experience in Machine Learning and AI development\n- Strong proficiency in Python and experience with TensorFlow or PyTorch\n- Experience with cloud platforms (AWS, Azure, or GCP)\n- Knowledge of MLOps practices and CI/CD pipelines\n- Experience with Docker and Kubernetes for containerized deployments\n- Strong understanding of deep learning architectures\n- Experience with data processing frameworks (Spark, Pandas)\n- Excellent problem-solving and communication skills\n\nPreferred Qualifications:\n- Experience with Natural Language Processing (NLP) or Computer Vision\n- Familiarity with large language models (LLMs)\n- Experience with distributed training and model optimization\n- Knowledge of SQL and NoSQL databases\n- Experience with monitoring and observability tools\n- Publications or contributions to open-source ML projects\n\nResponsibilities:\n- Design and develop scalable ML models for production\n- Optimize model performance and inference latency\n- Collaborate with data scientists and engineers\n- Implement MLOps best practices\n- Mentor junior team members",
+    "required_skills": [
+      "Python",
+      "Machine Learning",
+      "TensorFlow",
+      "PyTorch",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "MLOps",
+      "Deep Learning",
+      "Spark"
+    ],
+    "preferred_skills": [
+      "NLP",
+      "Computer Vision",
+      "Large Language Models",
+      "SQL",
+      "NoSQL",
+      "Distributed Training"
+    ]
+  },
+  {
+    "title": "Machine Learning Engineer - AI Platform",
+    "company": "DataTech Solutions",
+    "url": "https://www.linkedin.com/jobs/view/sample-2",
+    "location": "Remote",
+    "description": "About the job\n\nDataTech Solutions is looking for a Machine Learning Engineer to build and maintain our AI platform. Join our team of innovators working on cutting-edge AI solutions.\n\nRequired Skills:\n- 3+ years of experience in ML engineering or related field\n- Proficiency in Python and ML frameworks (Scikit-learn, TensorFlow, or PyTorch)\n- Experience with RESTful APIs and microservices architecture\n- Knowledge of Git and version control\n- Experience with cloud services (AWS preferred)\n- Understanding of model deployment and serving\n- Strong SQL skills and database knowledge\n- Experience with data pipelines and ETL processes\n\nPreferred Skills:\n- Experience with Kubernetes and container orchestration\n- Knowledge of streaming data platforms (Kafka, Kinesis)\n- Familiarity with CI/CD tools (Jenkins, GitHub Actions)\n- Experience with A/B testing and experimentation\n- Knowledge of model monitoring and performance tracking\n- Experience with serverless architectures\n- Understanding of data privacy and security best practices\n\nWhat You'll Do:\n- Build and deploy ML models to production\n- Create data pipelines for model training and inference\n- Optimize model performance and scalability\n- Implement monitoring and alerting systems\n- Work with cross-functional teams on AI initiatives\n- Document technical designs and processes",
+    "required_skills": [
+      "Python",
+      "Machine Learning",
+      "Scikit-learn",
+      "TensorFlow",
+      "REST API",
+      "AWS",
+      "Git",
+      "SQL",
+      "ETL"
+    ],
+    "preferred_skills": [
+      "Kubernetes",
+      "Kafka",
+      "Jenkins",
+      "CI/CD",
+      "A/B Testing",
+      "Serverless",
+      "Model Monitoring"
+    ]
+  }
+]
