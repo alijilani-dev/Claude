@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \".claude/hooks/inject-medical-context.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/validate-study-workflow-stage.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
