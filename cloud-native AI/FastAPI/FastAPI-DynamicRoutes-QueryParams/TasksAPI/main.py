@@ -18,7 +18,7 @@ def todo() -> list[dict[str, int | str]]:
 
 # Query Parameters
 @app.get("/tasks/{task_id}")
-def todo_one(task_id: int = 1, include_details: bool = False) -> dict[str, int | str]:
+async def todo_one(task_id: int = 1, include_details: bool = False) -> dict[str, int | str]:
     if task_id < 1:
         return {"error": "Task ID must be greater than 0"}
     if include_details:
