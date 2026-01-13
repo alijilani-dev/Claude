@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd cloud-native AI FastAPI projects and update local settings\n\n- Add FastAPI-Basics project with Claude skills\n- Add FastAPI-DynamicRoutes-PathParams project\n- Add FastAPI-DynamicRoutes-QueryParams project\n- Include local settings for GitHub_assistant, cover_letter_generator, and spec_test\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nMake todo_one endpoint async in FastAPI-DynamicRoutes-QueryParams\n\nChanged todo_one function from synchronous to asynchronous for better performance\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Skill(fetch-library-docs)",
+      "Bash(bash:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest:*)"
+    ]
+  }
+}
