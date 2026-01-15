@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(fetch-library-docs)",
+      "Bash(bash scripts/fetch-docs.sh:*)",
+      "Skill(skill-creator)",
+      "Bash(python scripts/init_skill.py:*)",
+      "Bash(python scripts/package_skill.py:*)",
+      "Bash(powershell -Command \"Compress-Archive -Path ''fastapi-helper\\*'' -DestinationPath ''fastapi-helper.zip'' -Force; Rename-Item ''fastapi-helper.zip'' ''fastapi-helper.skill'' -Force\")",
+      "Bash(dir \"D:\\Ali_Home\\Learning\\AgenticAI\\AI-P010\\Assignments\\Lecture3\\CRUD\\.claude\\skills\\fastapi-helper.skill\")",
+      "Bash(powershell -Command \"if (Test-Path ''FastAPI_Pytest_TDDHelper.skill'') { Remove-Item ''FastAPI_Pytest_TDDHelper.skill'' }; Compress-Archive -Path ''FastAPI_Pytest_TDDHelper\\*'' -DestinationPath ''FastAPI_Pytest_TDDHelper.zip'' -Force; Rename-Item ''FastAPI_Pytest_TDDHelper.zip'' ''FastAPI_Pytest_TDDHelper.skill'' -Force\")",
+      "Bash(dir:*)",
+      "Skill(github-assistant)",
+      "Bash(git fetch:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

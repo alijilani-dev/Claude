@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(github-assistant)",
+      "Bash(dir:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}
