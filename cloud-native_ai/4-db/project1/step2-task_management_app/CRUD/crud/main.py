@@ -35,12 +35,6 @@ create_tables()
 # How to actually interact with tables?
 app = FastAPI(title="Task Management API..")
 
-
-@app.get("/")
-def read_root():
-    """Root endpoint returning a Hello World message."""
-    return {"message": "Hello World"}
-
 @app.get("/todo")
 def todo(session: Session = Depends(get_session)) -> list[TodoItemResponse]:    # using dependency injection to get db connection
     expected = session.exec(select(TodoItem)).all()

@@ -8,12 +8,9 @@ reflected on to the repository most accurately. Do it while following proper sta
 
 create a skill for easily and accurately solving the problem scenarios mentioned in '/mnt/d/Ali_Home/Learning/AgenticAI/AI-P009/Assignments/ProjectA1/GitHub_assistant/head_scratchers.md' following proper standards   
 
-
-Create a GitHub Account and a Repository e.g. Claude
-
 - Prompt 3:
 
-use @github_assistant skill to synchronize my local folder '/mnt/d/Ali_Home/Learning/AgenticAI/AI-P009/claude_projects/' with my github repository 'https://github.com/alijilani-dev/Claude/tree/main'
+use @github-assistant skill to synchronize my local folder 'D:\Ali_Home\Learning\AgenticAI\AI-P009\claude_projects' with my github repository 'https://github.com/alijilani-dev/Claude/tree/main'
 
 - Prompt 4:
 
