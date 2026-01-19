@@ -1,0 +1,137 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "alijilani-claude-skills",
+  "version": "1.0.0",
+  "description": "A collection of Claude Code skills for developers - includes GitHub assistant, Docker tools, FastAPI helpers, TDD workflows, and productivity boosters",
+  "owner": {
+    "name": "Ali Jilani",
+    "email": "alijilani.dev@gmail.com"
+  },
+  "metadata": {
+    "description": "Community-built Claude Code skills to supercharge your development workflow",
+    "version": "1.0.0",
+    "pluginRoot": "./skills"
+  },
+  "plugins": [
+    {
+      "name": "github-assistant",
+      "description": "Interactive troubleshooting for GitHub problems - authentication, sync issues, merge conflicts, and sensitive data exposure",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/github-assistant",
+      "category": "development"
+    },
+    {
+      "name": "docker-rocker",
+      "description": "Docker containerization expert for FastAPI projects - Dockerfiles, docker-compose, multi-stage builds, and security best practices",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/docker-rocker",
+      "category": "development"
+    },
+    {
+      "name": "fastapi-helper",
+      "description": "FastAPI development assistant with routing, dependencies, Pydantic models, middleware, and testing patterns",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/fastapi-helper",
+      "category": "development"
+    },
+    {
+      "name": "fastapi-pytest-tddhelper",
+      "description": "Test-Driven Development workflow helper for FastAPI with pytest - fixtures, conftest patterns, and testing best practices",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/fastapi-pytest-tddhelper",
+      "category": "development"
+    },
+    {
+      "name": "sqlmodel-orm-dbhelper",
+      "description": "SQLModel ORM database helper for Python - models, relationships, migrations, and query patterns",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/sqlmodel-orm-dbhelper",
+      "category": "development"
+    },
+    {
+      "name": "cover-letter-generator",
+      "description": "Professional cover letter generator tailored to job descriptions and your experience",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/cover_letter_generator",
+      "category": "productivity"
+    },
+    {
+      "name": "resume-optimizer",
+      "description": "Resume optimization tool to match job requirements and highlight relevant skills",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/resume_optimizer",
+      "category": "productivity"
+    },
+    {
+      "name": "linkedin-post-generator",
+      "description": "LinkedIn post generator for professional content creation and engagement",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/linkedin-post-generator",
+      "category": "productivity"
+    },
+    {
+      "name": "study-notes",
+      "description": "Study notes generator for learning and revision",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/study_notes",
+      "category": "learning"
+    },
+    {
+      "name": "study-system",
+      "description": "Complete study system for organized learning and knowledge management",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/study_system",
+      "category": "learning"
+    },
+    {
+      "name": "pytest-python",
+      "description": "Python testing helper with pytest patterns, fixtures, and best practices",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/pytest-python",
+      "category": "development"
+    },
+    {
+      "name": "recipes",
+      "description": "Recipe and cooking assistant for meal planning and instructions",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ali Jilani"
+      },
+      "source": "./skills/recipes",
+      "category": "productivity"
+    }
+  ]
+}

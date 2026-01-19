@@ -1,0 +1,10 @@
+{
+  "name": "cover-letter-generator",
+  "description": "Professional cover letter generator tailored to job descriptions and your experience",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Jilani"
+  },
+  "category": "productivity",
+  "keywords": ["cover-letter", "job-application", "career", "writing"]
+}
