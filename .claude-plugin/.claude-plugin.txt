@@ -1,0 +1,4 @@
+Use fetch-library-docs skill to read the webpage at https://claudemarketplaces.com/about what this community is and to discover the process of creating my    
+  own marketplace. My claude repository on GitHub is at [https://github.com/alijilani-dev/Claude/tree/main]. Explain briefly what claudemarketplaces.com is     
+  and guide me step-by-step as a teenager to be able to create my marketplace so my marketplace gets listed on claudemarketplaces.com and I am able to
+  contribute to the community and earn from it by selling my claude skills like github-assistant and docker-rocker.
