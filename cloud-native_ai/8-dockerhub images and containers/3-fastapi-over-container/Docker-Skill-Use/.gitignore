@@ -1,0 +1,20 @@
+# Environment Variables (CRITICAL: Do not leak your Neon DB URL)
+.env
+
+# Python virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Docker
+.dockerignore
+
+# IDE specific files
+.vscode/
+.idea/

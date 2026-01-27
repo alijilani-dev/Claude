@@ -10,15 +10,17 @@ load_dotenv()
 engine = create_engine(os.getenv("DB_URL"), echo = True)
 
 class TodoItem(SQLModel, table = True):
-    id: int | None = Field(default = None, primary_key= True, index= True)       # API, DB <-> We will send it none and DB will set it.
+    id: Optional[int] = Field(default=None, primary_key=True, index=True)       # API, DB <-> We will send it none and DB will set it.
     task: str                                                       # is required, so cannot be set to none
-    time_estimate: int | None = Field(default = None)               # in minutes, Not required and None by default
+    time_estimate: Optional[int] = Field(default=None)              # in minutes, Not required and None by default
+    user_id: int
+    completed: bool = Field(default=False) # Moved completed here
 
-class TodoItemResponse(SQLModel, table = True):
-    id: int | None = Field(default = None, primary_key= True)       # API, DB <-> We will send it none and DB will set it.
+class TodoItemResponse(BaseModel):
+    id: int                                                         # API, DB <-> We will send it none and DB will set it.
     task: str                                                       # is required, so cannot be set to none
-    time_estimate: int | None = Field(default = None)               # in minutes, Not required and None by default
-    completed: bool = Field(default = False)                        # Not required and False by default
+    time_estimate: Optional[int]                                    # in minutes, Not required and None by default
+    completed: bool                                                 # Not required and False by default
 
 def get_session():
     with Session(engine) as session:                                # maintains session memory and database connection at the same time.
@@ -33,7 +35,7 @@ def create_tables():
 create_tables()
 
 # How to actually interact with tables?
-app = FastAPI(title="Task Management API..")
+app = FastAPI(title="Task Management API over Container..")
 
 @app.get("/todo")
 def todo(session: Session = Depends(get_session)) -> list[TodoItemResponse]:    # using dependency injection to get db connection
@@ -44,11 +46,11 @@ def todo(session: Session = Depends(get_session)) -> list[TodoItemResponse]:    
 def add_todo(todo: TodoItem, session: Session = Depends(get_session)) -> TodoItemResponse: # using dependency injection to get db connection
     # 1. Convert the input schema to the Database Table Model
     # The database will automatically assign the next available ID
-    db_todo = TodoItem.model_validate(todo)
-    session.add(db_todo)
+    # db_todo = TodoItem.model_validate(todo)
+    session.add(todo)
     session.commit()
-    session.refresh(db_todo)
-    return db_todo
+    session.refresh(todo)
+    return todo
 
 @app.delete("/todo/{todo_id}")
 def delete_todo(todo_id: int, session: Session = Depends(get_session)):
