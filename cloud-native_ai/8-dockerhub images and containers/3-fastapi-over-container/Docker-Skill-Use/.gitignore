@@ -1,5 +1,6 @@
 # Environment Variables (CRITICAL: Do not leak your Neon DB URL)
 .env
+.env.example
 
 # Python virtual environments
 .venv/
