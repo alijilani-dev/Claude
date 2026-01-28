@@ -1,0 +1,10 @@
+{
+  "name": "github-assistant",
+  "description": "Interactive troubleshooting for GitHub problems - authentication, sync issues, merge conflicts, and sensitive data exposure",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Jilani"
+  },
+  "category": "development",
+  "keywords": ["github", "git", "authentication", "merge-conflicts", "troubleshooting"]
+}

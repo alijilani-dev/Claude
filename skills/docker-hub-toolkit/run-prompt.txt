@@ -1,0 +1,1 @@
+Claude, use the docker-hub-toolkit skill to containerize this Python project. It uses a Neon DB, so ensure the Dockerfile is optimized for PostgreSQL and handles the connection string via environment variables. Tag it as dev and push it to my Docker Hub account alijilanidev

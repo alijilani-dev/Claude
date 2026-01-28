@@ -1,0 +1,10 @@
+{
+  "name": "linkedin-post-generator",
+  "description": "LinkedIn post generator for professional content creation and engagement",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Jilani"
+  },
+  "category": "productivity",
+  "keywords": ["linkedin", "social-media", "content", "professional", "networking"]
+}

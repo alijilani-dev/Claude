@@ -1,0 +1,10 @@
+{
+  "name": "pytest-python",
+  "description": "Python testing helper with pytest patterns, fixtures, and best practices",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Jilani"
+  },
+  "category": "development",
+  "keywords": ["pytest", "python", "testing", "unit-tests", "fixtures"]
+}

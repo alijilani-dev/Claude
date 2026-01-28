@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(skill-creator-pro)",
+      "WebFetch(domain:docs.docker.com)",
+      "Skill(fetch-library-docs)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Skill(skill-validator)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git fetch:*)"
+    ]
+  }
+}
