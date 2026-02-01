@@ -1,0 +1,10 @@
+{
+  "name": "resume-optimizer",
+  "description": "Resume optimization tool to match job requirements and highlight relevant skills",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Jilani"
+  },
+  "category": "productivity",
+  "keywords": ["resume", "cv", "job-application", "career", "optimization"]
+}
