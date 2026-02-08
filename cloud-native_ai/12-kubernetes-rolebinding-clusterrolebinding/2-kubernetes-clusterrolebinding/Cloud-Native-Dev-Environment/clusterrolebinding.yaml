@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: deployer-binding-global # Unique name for the cluster-wide binding
+# Note: 'namespace' is removed from metadata because ClusterRoleBindings are not namespaced
+subjects:
+- kind: ServiceAccount
+  name: deployer 
+  namespace: fundtransfer # We still specify the namespace where the ServiceAccount lives
+roleRef:
+  kind: ClusterRole # Must be changed to ClusterRole
+  name: fundtransfer-deployer-global # This must now match a ClusterRole name
+  apiGroup: rbac.authorization.k8s.io
+#

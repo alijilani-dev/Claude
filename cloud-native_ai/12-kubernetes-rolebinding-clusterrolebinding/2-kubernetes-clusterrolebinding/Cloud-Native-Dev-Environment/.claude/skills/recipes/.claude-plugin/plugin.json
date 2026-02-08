@@ -1,0 +1,10 @@
+{
+  "name": "recipes",
+  "description": "Recipe and cooking assistant for meal planning and instructions",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Jilani"
+  },
+  "category": "productivity",
+  "keywords": ["recipes", "cooking", "food", "meal-planning"]
+}
