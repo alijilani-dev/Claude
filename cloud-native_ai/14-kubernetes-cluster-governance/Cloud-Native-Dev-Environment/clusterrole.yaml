@@ -1,0 +1,12 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  # No namespace here! ClusterRoles are global.
+  name: fundtransfer-deployer-global
+rules:
+  - apiGroups: ["apps"]
+    resources: ["deployments", "replicasets"]
+    verbs: ["get", "list", "create", "update", "patch"] # Storage Resource Verbs (get, list, watch, create, update, patch, delete, deletecollection)
+  - apiGroups: [""] # the "Core" group
+    resources: ["pods", "services"] #Basic Foundational K8s Objects (Pods, Services, Nodes, ConfigMaps, Secrets, Namespaces, PersistentVolumes)
+    verbs: ["get", "list"]

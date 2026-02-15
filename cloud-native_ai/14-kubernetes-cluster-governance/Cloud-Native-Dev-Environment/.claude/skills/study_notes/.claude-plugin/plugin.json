@@ -1,0 +1,10 @@
+{
+  "name": "study-notes",
+  "description": "Study notes generator for learning and revision",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Jilani"
+  },
+  "category": "learning",
+  "keywords": ["study", "notes", "learning", "education", "revision"]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "fastapi-pytest-tddhelper",
+  "description": "Test-Driven Development workflow helper for FastAPI with pytest - fixtures, conftest patterns, and testing best practices",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Jilani"
+  },
+  "category": "development",
+  "keywords": ["pytest", "tdd", "testing", "fastapi", "fixtures"]
+}
