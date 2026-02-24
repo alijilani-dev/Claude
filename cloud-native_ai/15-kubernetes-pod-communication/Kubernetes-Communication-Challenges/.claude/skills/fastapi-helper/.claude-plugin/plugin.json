@@ -1,0 +1,10 @@
+{
+  "name": "fastapi-helper",
+  "description": "FastAPI development assistant with routing, dependencies, Pydantic models, middleware, and testing patterns",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ali Jilani"
+  },
+  "category": "development",
+  "keywords": ["fastapi", "python", "api", "pydantic", "web-development"]
+}

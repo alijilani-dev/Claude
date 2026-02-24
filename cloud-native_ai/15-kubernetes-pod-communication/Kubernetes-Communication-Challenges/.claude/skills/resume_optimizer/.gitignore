@@ -1,0 +1,349 @@
+# Resume Optimizer Project - .gitignore
+# Protects personal data and sensitive information from being committed to git
+
+# ============================================================================
+# PERSONAL & SENSITIVE DATA (DO NOT COMMIT)
+# ============================================================================
+
+# Resume files - all formats
+resume/
+*.docx
+*.doc
+*.pdf
+*resume*.docx
+*resume*.doc
+*resume*.pdf
+*cv*.docx
+*cv*.doc
+*cv*.pdf
+
+# Job search data
+jobs.json
+manual_jobs.json
+*_jobs.json
+
+# Generated output files (contain personal data)
+output/
+tailored_resumes/
+resume_tailored_*
+base_skills.json
+gap_analysis.json
+interview_prep.md
+summary_report.md
+
+# Temporary resume files
+/tmp/resume_*
+*.md.backup
+*.docx.backup
+
+# Personal information
+credentials.json
+secrets.json
+.env
+.env.local
+config.local.json
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ============================================================================
+# NODE.JS / NPM
+# ============================================================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# ============================================================================
+# IDEs and EDITORS
+# ============================================================================
+
+# VSCode
+.vscode/
+.vscode-test/
+*.code-workspace
+
+# JetBrains IDEs (PyCharm, IntelliJ, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Atom
+.atom/
+
+# ============================================================================
+# OPERATING SYSTEMS
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================================
+# LOGS AND DATABASES
+# ============================================================================
+
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+logs/
+*.log.*
+
+# ============================================================================
+# TEMPORARY AND CACHE FILES
+# ============================================================================
+
+tmp/
+temp/
+*.tmp
+*.temp
+*.cache
+.cache/
+*.bak
+*.backup
+
+# Playwright/Browser cache
+.playwright/
+playwright/.cache/
+
+# ============================================================================
+# COMPRESSED FILES (unless specifically tracked)
+# ============================================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ============================================================================
+# CLAUDE CODE / MCP SPECIFIC
+# ============================================================================
+
+# MCP server logs
+mcp-server.log
+playwright-server.log
+
+# Browser automation snapshots (may contain personal data)
+/tmp/linkedin_snapshot.txt
+/tmp/resume_extracted.md
+/tmp/resume_formatted.md
+snapshots/
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+
+# Keep example/template files but ignore actual data files
+!.claude/skills/*/config.example.json
+config.local.json
+
+# Ignore skill outputs but keep skill code
+.claude/skills/*/output/
+.claude/skills/*/tmp/
+
+# Keep README and documentation
+!README.md
+!*.md
+
+# But ignore generated reports with personal data
+summary_report.md
+gap_analysis_report.md
+interview_questions_*.md
+
+# ============================================================================
+# WHAT TO COMMIT (Explicitly allowed)
+# ============================================================================
+
+# These files SHOULD be committed:
+# - .claude/skills/**/*.py (Python scripts)
+# - .claude/skills/**/*.md (Documentation, but NOT output reports)
+# - .claude/skills/**/SKILL.md (Skill definitions)
+# - .claude/skills/**/references/*.md (Reference documentation)
+# - .claude/command/*.md (Command definitions)
+# - config.json (if it doesn't contain personal data)
+# - .gitignore (this file)
+# - README.md
+# - LICENSE
+
+# ============================================================================
+# NOTES
+# ============================================================================
+
+# To share your skill with others:
+# 1. Remove all personal data from config.json
+# 2. Create config.example.json with placeholder values
+# 3. Ensure no resume files or job data are included
+# 4. Test the skill with sample data
+# 5. Document any required setup in README.md
+
+# To use this project:
+# 1. Clone the repository
+# 2. Copy config.example.json to config.json
+# 3. Update config.json with your personal paths
+# 4. Place your resume in the resume/ directory
+# 5. Run the workflow

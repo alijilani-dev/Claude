@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: task-manager
+  name: task-manager
+spec:
+  containers:
+  - env:
+    - name: PROGRESS_TRACKER_URL
+      value: http://progress-tracker-service:80
+    image: task-manager:v1
+    name: task-manager
+    ports:
+    - containerPort: 8000
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

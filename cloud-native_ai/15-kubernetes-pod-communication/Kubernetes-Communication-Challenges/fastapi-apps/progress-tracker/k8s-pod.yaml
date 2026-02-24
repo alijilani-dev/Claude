@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: progress-tracker
+  name: progress-tracker
+spec:
+  containers:
+  - image: progress-tracker:v1
+    name: progress-tracker
+    ports:
+    - containerPort: 8000
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
