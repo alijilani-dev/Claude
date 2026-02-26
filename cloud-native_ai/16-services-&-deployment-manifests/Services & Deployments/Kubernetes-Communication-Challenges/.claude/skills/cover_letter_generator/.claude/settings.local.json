@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(npx playwright install chrome)",
+      "WebSearch",
+      "WebFetch(domain:www.linkedin.com)",
+      "WebFetch(domain:apply.deloitte.com)",
+      "WebFetch(domain:usijobs.deloitte.com)",
+      "WebFetch(domain:www.deloitte.com)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Skill(docx)",
+      "Skill(skill-creator)",
+      "Skill(browsing-with-playwright)",
+      "Bash(bash:*)",
+      "WebFetch(domain:www.anthropic.com)",
+      "WebFetch(domain:job-boards.greenhouse.io)"
+    ]
+  }
+}
